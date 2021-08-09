@@ -41,6 +41,7 @@ body {
 }
 
 img {
+  padding-bottom: 50px;
   width: 75px;
 }
 
@@ -102,18 +103,30 @@ img {
 /*
  * Body
  */
-ul {
+.about-paragraph{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.box {
   font-size: 2rem;
   font-weight: 400;
-  list-style: none;
-
-  /* flips the scroll bar to the left */
-  direction: rtl;
+  height: 300px;
   /* this allows the website to prevent overflowing of entries within the webpage */
   max-height: 300px;
-  overflow: scroll;
+  overflow: auto;
   /* this removes the horizontal scroll bar */
   overflow-x: auto;
+}
+
+.box p {
+  display: inline;
+  padding-left: 30px;
+}
+
+input:checked + p {
+  text-decoration: line-through;
 }
 
 .form-control {
